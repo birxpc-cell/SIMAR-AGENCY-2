@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JODxREAL | Official Access</title>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1785395636122669');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1785395636122669&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+        :root {
+            --bg-main: #06090e;
+            --card-bg: rgba(15, 23, 42, 0.95);
+            --accent-green: #00ff87;
+            --accent-cyan: #60efff;
+            --text-main: #ffffff;
+            --text-sub: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            background-image: 
+                radial-gradient(circle at 50% 20%, rgba(0, 255, 135, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 50% 80%, rgba(96, 239, 255, 0.1) 0%, transparent 50%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-main);
+            padding: 16px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .status-pill {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            padding: 8px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 12px;
+            color: var(--text-sub);
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent-green);
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 10px var(--accent-green);
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid rgba(0, 255, 135, 0.2);
+            border-radius: 20px;
+            padding: 28px 20px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+        }
+
+        .avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--accent-green);
+            box-shadow: 0 0 15px rgba(0, 255, 135, 0.3);
+            margin: 0 auto 14px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 4px;
+        }
+
+        .tagline {
+            font-size: 13px;
+            color: var(--text-sub);
+            margin-bottom: 20px;
+        }
+
+        /* High-Tech Glowing CTA Button */
+        .cta-btn {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(135deg, var(--accent-green), #00b894);
+            color: #000000;
+            font-size: 16px;
+            font-weight: 800;
+            text-decoration: none;
+            border-radius: 14px;
+            box-shadow: 0 0 20px rgba(0, 255, 135, 0.4);
+            animation: pulse-glow 2s infinite;
+            border: none;
+            cursor: pointer;
+        }
+
+        @keyframes pulse-glow {
+            0% {
+                box-shadow: 0 0 15px rgba(0, 255, 135, 0.4);
+                transform: scale(1);
+            }
+            50% {
+                box-shadow: 0 0 30px rgba(0, 255, 135, 0.8);
+                transform: scale(1.02);
+            }
+            100% {
+                box-shadow: 0 0 15px rgba(0, 255, 135, 0.4);
+                transform: scale(1);
+            }
+        }
+
+        .guarantee {
+            margin-top: 14px;
+            font-size: 11px;
+            color: var(--text-sub);
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 11px;
+            color: #475569;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .footer a {
+            color: #64748b;
+            text-decoration: none;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 999;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 12px;
+            max-width: 360px;
+            font-size: 12px;
+            color: #cbd5e1;
+        }
+
+        .close-btn {
+            background: var(--accent-green);
+            color: #000;
+            font-weight: bold;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            margin-top: 10px;
+            cursor: pointer;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="status-pill">
+            <span><span class="dot"></span> OFFICIAL COMMUNITY</span>
+            <span style="color: var(--accent-green);">FREE JOIN</span>
+        </div>
+
+        <div class="card">
+            <img src="https://i.ibb.co/My5FNkF8/IMG-20260903-020753-298.jpg" alt="JODxREAL" class="avatar">
+            <h1 class="title">JODxREAL</h1>
+            <p class="tagline">Tap below to join official channel</p>
+
+            <!-- High-Tech Direct CTA Button -->
+            <a href="https://t.me/+-R8PoFg062NkNDg1" class="cta-btn" id="joinBtn">
+                <span>JOIN TELEGRAM CHANNEL</span>
+                <span style="font-size: 18px;">➔</span>
+            </a>
+
+            <div class="guarantee">
+                🔒 Instant Redirect to Telegram
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>Ads Managed By <a href="https://t.me/senorita_xoxo" target="_blank">@senorita_xoxo</a></div>
+            <div>
+                <a href="#" onclick="openModal('privacyModal')">Privacy Policy</a> • 
+                <a href="#" onclick="openModal('termsModal')">Terms of Service</a>
+            </div>
+            <div style="font-size: 9px; opacity: 0.5;">
+                This site is not part of Meta Platforms, Inc.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="privacyModal">
+        <div class="modal-content">
+            <h3>Privacy Policy</h3>
+            <p style="margin-top: 8px;">We respect your privacy. This site uses standard tracking code to analyze page visitors.</p>
+            <button class="close-btn" onclick="closeModal('privacyModal')">Close</button>
+        </div>
+    </div>
+
+    <div class="modal" id="termsModal">
+        <div class="modal-content">
+            <h3>Terms of Service</h3>
+            <p style="margin-top: 8px;">By clicking join, you will be redirected to the official Telegram application.</p>
+            <button class="close-btn" onclick="closeModal('termsModal')">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = "flex";
+        }
+        function closeModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+    </script>
+</body>
+</html>
